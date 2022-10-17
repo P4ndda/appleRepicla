@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Sf Reg";
+    src: url(fonts/SanFranciscoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: "SF SemBold";
+    src: url(fonts/SanFranciscoDisplay-Semibold.otf);
+}
+
+:root{
+    --gray: #323233;
+    --blue: #277DD4;
+    --orange: #FD6A13;
+    --red: #BE2426;
+    --divBackground: #FBFBFD;
+    --colorTitle: #1D1D1F;
+    --colorSubTitle: #86868B;
+    --commonFont: "Sf Reg";
+    --titleFont: "SF SemBold";
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: var(--commonFont);
+    text-decoration: none;
+}
+
+.header{
+    position: relative;
+    height: 44px;
+    width: 100vw;
+    
+    opacity: 0.99;
+    backdrop-filter: blur(20);
+    
+    background-color: var(--gray);
+}
+
+.header-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    min-width: 832px;
+    max-width: 1040px;
+
+}
+
+.navLink{
+    display: inline;
+
+    padding: 0px 8px;
+    color: white;
+}
+
+section{
+    height: 730px;
+    background-color: #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.textSection{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.textSection h2{
+    font-family: var(--titleFont);
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+.textSection h3{
+    font-family: var(--commonFont);
+    font-weight: normal;
+    font-size: 1.7em;
+    padding-bottom: 15px;
+}
+
+.textSection p{
+    padding-bottom: 15px;
+    font-size: 1.4em;
+    color: var(--colorSubTitle);
+}
+
+.textSection a{
+    color: var(--blue);
+    font-size: 1.4em;
+    margin-right: 32px;
+
+}
+
+.textSection a:hover{
+    text-decoration: underline;
+}
+
+.textSection a::after{
+    text-decoration: none;
+    content: " >";
+}
+
+.textSection a::after:hover{
+    text-decoration: none;
+}
+
+#handsAndIphone{
+    background-color: var(--divBackground);
+    background-image: url(img/handsAndIphone.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+section.backgroungBlack{
+    background-color: black;
+    background-image: url(img/iphone14.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+section.backgroungBlack
+.textSection{
+    color: white;
+}
+
+section#Bigwatch
+.textSection h4{
+    text-transform: uppercase;
+    font-family: var(--titleFont);
+    font-size: 1.2em;
+    color: var(--orange);
+}
