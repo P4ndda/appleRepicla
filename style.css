@@ -32,7 +32,7 @@
 .header{
     position: relative;
     height: 44px;
-    width: 100vw;
+    width: 97vw;
     
     opacity: 0.99;
     backdrop-filter: blur(20);
@@ -66,7 +66,6 @@ section{
 
 .textSection{
     text-align: center;
-    padding-bottom: 10px;
 }
 
 .textSection h2{
@@ -92,8 +91,11 @@ section{
 .textSection a{
     color: var(--blue);
     font-size: 1.4em;
-    margin-right: 32px;
 
+}
+
+.textSection a.one{
+    margin-right: 32px;
 }
 
 .textSection a:hover{
@@ -128,9 +130,35 @@ section.backgroungBlack
     color: white;
 }
 
+section#Bigwatch{
+    background-image: url(img/bigAppleWatch.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+section#Bigwatch .textSection h2{
+    position: relative;
+}
+
+#Bigwatch
+.textSection h2::before{
+    content: '';
+    display: block;
+    background-image: url(icons/apple-iconBlack.png);
+    height: 50px;
+    width: 42px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+
+    top: 50%;
+    left: 38%;
+}
+
 section#Bigwatch
 .textSection h4{
     text-transform: uppercase;
+    letter-spacing: 2.5px;
     font-family: var(--titleFont);
     font-size: 1.2em;
     color: var(--orange);
