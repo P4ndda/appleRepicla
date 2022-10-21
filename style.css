@@ -9,7 +9,14 @@
     src: url(fonts/SanFranciscoDisplay-Semibold.otf);
 }
 
+@font-face {
+    font-family: "SF Bold";
+    src: url(fonts/SanFranciscoDisplay-Bold.otf);
+}
+
 :root{
+    --white: #ffffff;
+    --black: #000000;
     --gray: #323233;
     --blue: #277DD4;
     --orange: #FD6A13;
@@ -19,6 +26,7 @@
     --colorSubTitle: #86868B;
     --commonFont: "Sf Reg";
     --titleFont: "SF SemBold";
+    --constraTitle: "SF Bold";
 }
 
 *{
@@ -59,17 +67,22 @@
 }
 
 section{
-    height: 730px;
-    background-color: #e6e6e6;
+    height: 815px;
+    background-color: #FBFBFD;
     margin-bottom: 10px;
 }
 
 .textSection{
+    display: block;
     text-align: center;
+    float: top;
+    height: 50%;
 }
 
+.textSection 
+h2, h4 { font-family: var(--titleFont); }
+
 .textSection h2{
-    font-family: var(--titleFont);
     padding-top: 60px;
     font-weight: bold;
     font-size: 3.5em;
@@ -129,15 +142,33 @@ section.backgroungBlack
 .textSection{
     color: white;
 }
-
 section#Bigwatch{
     background-image: url(img/bigAppleWatch.png);
     background-repeat: no-repeat;
     background-position: bottom center;
+    background-size: contain;
+    background-size: 1100px;
+}
+
+section#Bigwatch .textSection{
+    padding-top: 80px;
+}
+
+section#Bigwatch .iconTitle{
+    width: 181px;
+    text-align: center;
+    margin: auto;
+
 }
 
 section#Bigwatch .textSection h2{
+    font-family: var(--constraTitle);
+    font-size: 2.5em;
+    text-align: right;
     position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 20px;
 }
 
 #Bigwatch
@@ -145,14 +176,15 @@ section#Bigwatch .textSection h2{
     content: '';
     display: block;
     background-image: url(icons/apple-iconBlack.png);
-    height: 50px;
+    height: 40px;
     width: 42px;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-
+    margin: auto;
     top: 50%;
-    left: 38%;
+    transform: translateY(5px);
+
 }
 
 section#Bigwatch
@@ -162,4 +194,81 @@ section#Bigwatch
     font-family: var(--titleFont);
     font-size: 1.2em;
     color: var(--orange);
+}
+
+section.twoArticles{
+    height: 650px;
+    padding: 10px;
+}
+
+article#worldWatch{
+    display: block;
+    float: left;
+    
+    height: 100%;
+    width: 49%;
+    
+    font-family: var(--constraTitle);
+    background-color: var(--black);
+    background-image: url(img/appleWatch.png);
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+article#worldWatch
+.textSection{color: var(--white);}
+
+article#worldWatch
+.textSection  h2{
+    text-transform: uppercase;
+    margin: auto;
+    text-align: end;
+    
+    width: calc(126.3px + 40px);
+    font-size: 2.25em;
+    letter-spacing: 2.5px;
+
+    position: relative;
+}
+
+article#worldWatch
+.textSection h2::before{
+    position: absolute;
+    content: '';
+    display: block;
+    
+    height: 35px;
+    width: 37px;
+    
+    top: 50%;
+    transform: translateY(5px);
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    background-image: url(icons/apple-icon.png);
+
+}
+
+article#worldWatch
+.textSection  h4{
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+
+    color: var(--red);
+}
+
+article#worldWatch
+.textSection  h3{font-size: 1.5em;}
+
+article#airPods{
+    display: block;
+    float: right;
+    height: 100%;
+    width: 49%;
+    background-color: #2d2d63;
 }
