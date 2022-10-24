@@ -196,18 +196,48 @@ section#Bigwatch
     color: var(--orange);
 }
 
+/*Config class - TwoArticles*/
+
 section.twoArticles{
     height: 650px;
-    padding: 10px;
+    padding: 5px 10px 0px 10px;
 }
 
-article#worldWatch{
-    display: block;
-    float: left;
-    
+section.twoArticles
+article{
     height: 100%;
     width: 49%;
-    
+}
+
+section.twoArticles
+article.left{
+    display: block;
+    float: left;
+    color: var(--white);
+}
+
+section.twoArticles
+article.right{
+    display: block;
+    float: right;
+}
+
+section.twoArticles
+article
+h2{font-size: 2.25em;}
+
+section.twoArticles
+article
+h3{font-size: 1.5em;}
+
+
+section.twoArticles
+article
+h4{font-size: 0.8em;}
+
+/*Article WorldWach*/
+
+article#worldWatch{
     font-family: var(--constraTitle);
     background-color: var(--black);
     background-image: url(img/appleWatch.png);
@@ -217,16 +247,13 @@ article#worldWatch{
 }
 
 article#worldWatch
-.textSection{color: var(--white);}
-
-article#worldWatch
 .textSection  h2{
     text-transform: uppercase;
     margin: auto;
     text-align: end;
     
     width: calc(126.3px + 40px);
-    font-size: 2.25em;
+
     letter-spacing: 2.5px;
 
     position: relative;
@@ -256,19 +283,40 @@ article#worldWatch
     text-transform: uppercase;
 
     letter-spacing: 1.5px;
-    font-size: 0.8em;
     padding-bottom: 15px;
 
     color: var(--red);
 }
 
-article#worldWatch
-.textSection  h3{font-size: 1.5em;}
+/*Article HandsAndIphone*/
+
+article#handsAndIphone{
+    background-color: var(--divBackground);
+    background-image: url(img/handsAndIphonePqn.png);
+    background-repeat: no-repeat;
+    background-position:  bottom center;
+}
+
+/*Article Airpods*/
 
 article#airPods{
-    display: block;
-    float: right;
-    height: 100%;
-    width: 49%;
-    background-color: #2d2d63;
+    background-color: var(--black);
+    background-image: url(img/airPods.png);
+    background-repeat: no-repeat;
+    background-position:  bottom center;
+}
+
+/*Article Watches*/
+
+article#watchs{
+    background-image: url(img/appleWatchs.png);
+    background-repeat: no-repeat;
+    background-position: bottom 63px center;
+}
+
+article#watchs
+.textSection
+h4{
+    color: var(--red);
+    text-transform: uppercase;
 }
