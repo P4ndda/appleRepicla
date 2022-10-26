@@ -27,6 +27,8 @@
     --commonFont: "Sf Reg";
     --titleFont: "SF SemBold";
     --constraTitle: "SF Bold";
+    --heightSetion: 815px;
+    --heightSectionTwo: 630px;
 }
 
 *{
@@ -67,7 +69,7 @@
 }
 
 section{
-    height: 815px;
+    height: var(--heightSetion);
     background-color: #FBFBFD;
     margin-bottom: 10px;
 }
@@ -135,7 +137,9 @@ section.backgroungBlack{
     background-color: black;
     background-image: url(img/iphone14.png);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: bottom center;
+    background-size: 750px;
 }
 
 section.backgroungBlack
@@ -154,37 +158,26 @@ section#Bigwatch .textSection{
     padding-top: 80px;
 }
 
-section#Bigwatch .iconTitle{
-    width: 181px;
-    text-align: center;
-    margin: auto;
-
-}
-
 section#Bigwatch .textSection h2{
+    position: relative;
     font-family: var(--constraTitle);
     font-size: 2.5em;
-    text-align: right;
-    position: relative;
     text-transform: uppercase;
     font-weight: bold;
-    padding-right: 20px;
+
 }
 
 #Bigwatch
 .textSection h2::before{
     content: '';
-    display: block;
+    display: inline-block;
+    padding-top: 8px;
+    width: 35px;
+    height: 30px;
     background-image: url(icons/apple-iconBlack.png);
-    height: 40px;
-    width: 42px;
-    background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
-    margin: auto;
-    top: 50%;
-    transform: translateY(5px);
-
+    background-size: 30px;
+    background-repeat: no-repeat;
 }
 
 section#Bigwatch
@@ -199,7 +192,7 @@ section#Bigwatch
 /*Config class - TwoArticles*/
 
 section.twoArticles{
-    height: 650px;
+    height: var(--heightSectionTwo);
     padding: 5px 10px 0px 10px;
 }
 
@@ -319,4 +312,10 @@ article#watchs
 h4{
     color: var(--red);
     text-transform: uppercase;
+}
+
+article#appleTv{
+    background-image: url(img/appleTv.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
