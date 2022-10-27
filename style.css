@@ -27,8 +27,9 @@
     --commonFont: "Sf Reg";
     --titleFont: "SF SemBold";
     --constraTitle: "SF Bold";
-    --heightSetion: 815px;
+    --heightSetion: 930px;
     --heightSectionTwo: 630px;
+    --linearGradient: (to right, var(--blue), #c61f8b);
 }
 
 *{
@@ -77,7 +78,6 @@ section{
 .textSection{
     display: block;
     text-align: center;
-    float: top;
     height: 50%;
 }
 
@@ -87,25 +87,25 @@ h2, h4 { font-family: var(--titleFont); }
 .textSection h2{
     padding-top: 60px;
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 4.5em;
 }
 
 .textSection h3{
     font-family: var(--commonFont);
     font-weight: normal;
-    font-size: 1.7em;
+    font-size: 2em;
     padding-bottom: 15px;
 }
 
 .textSection p{
     padding-bottom: 15px;
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: var(--colorSubTitle);
 }
 
 .textSection a{
     color: var(--blue);
-    font-size: 1.4em;
+    font-size: 1.6em;
 
 }
 
@@ -126,11 +126,22 @@ h2, h4 { font-family: var(--titleFont); }
     text-decoration: none;
 }
 
-#handsAndIphone{
+section#iPad{
+    position: relative;
     background-color: var(--divBackground);
-    background-image: url(img/handsAndIphone.png);
+    background-image: url(img/iPad.png);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position:  left 40% center;
+}
+
+section#iPad
+.textSection{
+    padding-left: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateY(-50%);
 }
 
 section.backgroungBlack{
@@ -139,7 +150,7 @@ section.backgroungBlack{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom center;
-    background-size: 750px;
+    background-size: 850px;
 }
 
 section.backgroungBlack
@@ -159,7 +170,6 @@ section#Bigwatch .textSection{
 }
 
 section#Bigwatch .textSection h2{
-    position: relative;
     font-family: var(--constraTitle);
     font-size: 2.5em;
     text-transform: uppercase;
@@ -167,16 +177,14 @@ section#Bigwatch .textSection h2{
 
 }
 
-#Bigwatch
-.textSection h2::before{
+.textSection h2.iconTitle::before{
     content: '';
     display: inline-block;
-    padding-top: 8px;
     width: 35px;
-    height: 30px;
+    height: 35px;
     background-image: url(icons/apple-iconBlack.png);
     background-size: contain;
-    background-size: 30px;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -228,7 +236,7 @@ section.twoArticles
 article
 h4{font-size: 0.8em;}
 
-/*Article WorldWach*/
+/*Article WorldWatch*/
 
 article#worldWatch{
     font-family: var(--constraTitle);
@@ -240,35 +248,8 @@ article#worldWatch{
 }
 
 article#worldWatch
-.textSection  h2{
-    text-transform: uppercase;
-    margin: auto;
-    text-align: end;
-    
-    width: calc(126.3px + 40px);
-
-    letter-spacing: 2.5px;
-
-    position: relative;
-}
-
-article#worldWatch
-.textSection h2::before{
-    position: absolute;
-    content: '';
-    display: block;
-    
-    height: 35px;
-    width: 37px;
-    
-    top: 50%;
-    transform: translateY(5px);
-    
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: auto;
+.textSection h2.iconTitle::before{
     background-image: url(icons/apple-icon.png);
-
 }
 
 article#worldWatch
@@ -289,6 +270,28 @@ article#handsAndIphone{
     background-repeat: no-repeat;
     background-position:  bottom center;
 }
+
+/*Article iPad Pro*/
+
+article#iPadsPro{
+    position: relative;
+    backdrop-filter: blur(1px);
+
+    background-color: var(--black);
+}
+
+article#iPadsPro
+div#gradientColor{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-25%);
+
+    height: 250px;
+    width: 100%;
+
+    background-image: linear-gradient(to right, var(--blue), #c61f8b);
+}
+
 
 /*Article Airpods*/
 
@@ -319,3 +322,9 @@ article#appleTv{
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+
+article#appleTv
+.textSection h2{
+    color: var(--linearGradient);
+}
+/**/
