@@ -27,7 +27,7 @@
     --commonFont: "Sf Reg";
     --titleFont: "SF SemBold";
     --constraTitle: "SF Bold";
-    --heightSetion: 930px;
+    --heightSetion: 880px;
     --heightSectionTwo: 630px;
     --linearGradient: (to right, var(--blue), #c61f8b);
 }
@@ -41,33 +41,44 @@
 }
 
 .header{
-    position: relative;
-    height: 44px;
-    width: 97vw;
-    
-    opacity: 0.99;
-    backdrop-filter: blur(20);
-    
-    background-color: var(--gray);
+    top: 0%;
+    position: fixed;
+    background-color: var(--black);
+    width: 98vw;
+    padding: 17.5px 10px;
+    z-index: 999;
+    opacity: 0.9;
+    backdrop-filter: blur(10px);
 }
 
-.header-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
-    min-width: 832px;
-    max-width: 1040px;
-
+header 
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
 }
 
-.navLink{
-    display: inline;
-
-    padding: 0px 8px;
-    color: white;
+header 
+ul li a{
+    color: var(--white);
+    width: 20px;
+    height: 25px;
 }
+
+header 
+ul li#iconApple{
+    content: '';
+    display: inline-block;
+    background-image: url(icons/apple-icon.png);
+    background-size: contain;
+    width: 20px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 
 section{
     height: var(--heightSetion);
@@ -131,7 +142,7 @@ section#iPad{
     background-color: var(--divBackground);
     background-image: url(img/iPad.png);
     background-repeat: no-repeat;
-    background-position:  left 40% center;
+    background-position:  left 25% center;
 }
 
 section#iPad
@@ -139,7 +150,7 @@ section#iPad
     padding-left: 80px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
 
     transform: translateY(-50%);
 }
