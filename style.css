@@ -40,6 +40,8 @@
     text-decoration: none;
 }
 
+
+
 header.header{
     top: 0%;
     position: fixed;
@@ -59,10 +61,17 @@ ul {
 }
 
 header 
-ul li a{
+ul li a, li#iconApple{
+    display: block;
     color: var(--white);
     width: 20px;
     height: 25px;
+    opacity: .7;
+}
+
+header 
+ul li a:hover, li#iconApple:hover{
+    opacity: 1;
 }
 
 header 
@@ -123,18 +132,22 @@ h2, h4 { font-family: var(--titleFont); }
     margin-right: 32px;
 }
 
-.textSection a:hover{
-    text-decoration: underline;
+.textSection a::after{
+    content: " >";
 }
 
 .textSection a::after{
     text-decoration: none;
-    content: " >";
 }
 
-.textSection a::after:hover{
+a::after:hover{
     text-decoration: none;
 }
+
+.textSection a:hover{
+    text-decoration: underline;
+}   
+
 
 section#iPad{
     position: relative;
