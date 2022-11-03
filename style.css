@@ -14,6 +14,9 @@
     src: url(fonts/SanFranciscoDisplay-Bold.otf);
 }
 
+
+
+
 :root{
     --white: #ffffff;
     --black: #000000;
@@ -200,6 +203,10 @@ section#Bigwatch .textSection h2{
 
 }
 
+.textSection h2.iconTitle{
+    text-transform: uppercase;
+}
+
 .textSection h2.iconTitle::before{
     content: '';
     display: inline-block;
@@ -276,7 +283,11 @@ article#worldWatch{
 }
 
 article#worldWatch
-.textSection h2.iconTitle::before{background-image: url(icons/apple-icon.png);}
+.textSection  h2{ text-transform: uppercase; }
+
+article#worldWatch
+.textSection 
+h2.iconTitle::before{background-image: url(icons/apple-icon.png);}
 
 article#worldWatch
 .textSection  h4{
@@ -349,6 +360,8 @@ h4{
     text-transform: uppercase;
 }
 
+/*Article apple Tv*/
+
 article#appleTv{
     background-image: url(img/appleTv.png);
     background-repeat: no-repeat;
@@ -356,13 +369,18 @@ article#appleTv{
 }
 
 article#appleTv
+.textSection h2{
+    text-transform: none;
+}
+
+article#appleTv
 .textSection h2 #highlighted{
+    font-family: var(--constraTitle);
     display: inline;
 
-    background-image: linear-gradient(to right, #d86578, steelblue, #50e350);
+    background-image: linear-gradient( 125deg, #e62884 24%, #f1582b 51%, #3878bc 58%, #b7d84d 86%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     color: black;
 }
-/**/
