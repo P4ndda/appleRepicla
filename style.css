@@ -233,6 +233,11 @@ article{
     width: 49%;
 }
 
+/* title icons (ARTICLE)*/
+section.twoArticles article
+.textSection 
+h2.iconTitle::before{width: 30px; height: 30px;}
+
 section.twoArticles
 article.left{
     display: block;
@@ -271,9 +276,7 @@ article#worldWatch{
 }
 
 article#worldWatch
-.textSection h2.iconTitle::before{
-    background-image: url(icons/apple-icon.png);
-}
+.textSection h2.iconTitle::before{background-image: url(icons/apple-icon.png);}
 
 article#worldWatch
 .textSection  h4{
@@ -299,8 +302,14 @@ article#handsAndIphone{
 article#iPadsPro{
     position: relative;
     backdrop-filter: blur(1px);
-
     background-color: var(--black);
+    backdrop-filter: blur(20px);
+}
+
+article#iPadsPro
+div#color-Black{
+
+    background-color: black;
 }
 
 article#iPadsPro
@@ -347,7 +356,13 @@ article#appleTv{
 }
 
 article#appleTv
-.textSection h2{
-    color: var(--linearGradient);
+.textSection h2 #highlighted{
+    display: inline;
+
+    background-image: linear-gradient(to right, #d86578, steelblue, #50e350);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: black;
 }
 /**/
