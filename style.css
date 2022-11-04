@@ -14,7 +14,15 @@
     src: url(fonts/SanFranciscoDisplay-Bold.otf);
 }
 
+@font-face{
+    font-family: "SFtext Reg";
+    src: url(fonts/SanFranciscoText-Regular.otf);
+}
 
+@font-face {
+    font-family: "SFtext SemBo";
+    src: url(fonts/SanFranciscoText-Semibold.otf);
+}
 
 
 :root{
@@ -30,6 +38,8 @@
     --commonFont: "Sf Reg";
     --titleFont: "SF SemBold";
     --constraTitle: "SF Bold";
+    --footerFont-Regular: "SFtext Reg";
+    --footerFont-SemiBold: "SFtext SemBo";
     --heightSetion: 880px;
     --heightSectionTwo: 630px;
     --linearGradient: (to right, var(--blue), #c61f8b);
@@ -384,3 +394,35 @@ article#appleTv
     -webkit-background-clip: text;
     color: black;
 }
+
+footer{
+    padding: 10px;
+    background-color: #F5F5F7;
+    font-family: var(--footerFont-Regular);
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+footer p{
+    display: block;
+    padding-bottom: 15px;
+}
+
+footer div#list{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div#list 
+ul{ list-style: none;}
+
+footer div#list 
+h4{
+    font-family: var(--footerFont-SemiBold);
+    color: var(--colorTitle);
+    padding: 15px 0px 5px 0px;
+}
+
+footer div#list 
+ul li {padding: 5px 0px;}
+
