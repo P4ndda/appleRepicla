@@ -399,22 +399,26 @@ footer{
     padding: 10px;
     background-color: #F5F5F7;
     font-family: var(--footerFont-Regular);
-    text-align: justify;
     font-size: 0.8em;
+    color: #656568;
 }
 
-footer p{
-    display: block;
-    padding-bottom: 15px;
-}
+footer p{ display: block; }
 
-footer div#list{
+footer hr{ margin: 9.5px 0px;}
+
+footer > div#list{
     display: flex;
     justify-content: space-around;
 }
 
-footer div#list 
+footer
 ul{ list-style: none;}
+
+footer div#list 
+ul{ list-style: none;
+max-width: 100px;
+}
 
 footer div#list 
 h4{
@@ -426,3 +430,19 @@ h4{
 footer div#list 
 ul li {padding: 5px 0px;}
 
+footer div#list 
+ul li a{
+    color: #656568;
+}
+
+footer div#list 
+ul li a:hover{
+    text-decoration: underline;
+}
+
+footer > ul{
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer > ul hr{ margin: 0px 10px;}
