@@ -10,27 +10,64 @@
     <title>Apple(Replica)</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-container">
-            <!--Nav DESKTOP-->
-            <ul class="navListDesktop">
+    <header class="cabecalho">
+            <ul id="navListDesktop">
                 <li id="menu">
-                    <a href="#">
+                    <button href="#" onclick="clickMenu()">
                         <span class="material-symbols-outlined">drag_handle</span>
-                    </a>
+                    </button>
                 </li>
+                <li>
+                    
+                </li>
+                    <li class="navDesk">
+                        <a href="#">Mac</a>
+                    </li>
+
+                    <li class="navDesk">
+                        <a href="#">iPad</a>
+                    </li>
+
+                    <li class="navDesk">
+                        <a href="#">iPhone</a>
+                    </li>
+
+                    <li class="navDesk">
+                        <a href="#">Watch</a>
+                    </li>
+
+                    <li class="navDesk">
+                        <a href="#">AirPods</a>
+                    </li>
+
+                    <li class="navDesk">
+                        <a href="#">TV e casa</a>
+                    </li>
+
+                    <li class="navDesk">
+                        <a href="#">Só na Apple</a>
+                    </li>
+
+                    <li class="navDesk">
+                        <a href="#">Acessórios</a>
+                    </li>
+
+                    <li class="navDesk"> 
+                        <a href="#">Suporte</a>
+                    </li>
+
                 <li id="iconApple">
                     <a href="#">
 
                     </a>                    
                 </li>
                 <li id="storeApple">
-                    <a href="#">
+                    <button href="#">
                         <span class="material-symbols-outlined">shopping_bag</span>
-                    </a>
+                    </button>
                 </li>
             </ul>
-        </div>
+
     </header>
     <main>
         <section id="iPad">
@@ -182,7 +219,7 @@
 
         </section>
         <footer>
-            <p>
+            <p id="aboutApple">
                 O Apple TV+ custa R$ 14,90 por mês após o período de teste gratuito. Uma assinatura por grupo de Compartilhamento Familiar. Oferta válida por três meses a partir da data de ativação do aparelho qualificado. A assinatura é renovada automaticamente até que seja cancelada. Aplicam-se outros termos e restrições.
             </p><hr>
 
@@ -261,13 +298,18 @@
             </div>
 
             <p>
-                Outras formas de comprar: encontre uma Apple Store ou revendedor Apple na sua região. Ou ligue para 0800-761-0867. Rua Leopoldo Couto de Magalhães Jr., 700, 7º andar, Itaim Bibi. São Paulo, SP. CEP: 04542-000.
+                Outras formas de comprar: <a href="#">encontre uma Apple Store</a> ou <a href="#">revendedor Apple</a> na sua região. Ou ligue para 0800-761-0867. Rua Leopoldo Couto de Magalhães Jr., 700, 7º andar, Itaim Bibi. São Paulo, SP. CEP: 04542-000.
+            </p>    
+                
+            <p>
                 Os Serviços de Mídia da Apple são fornecidos pela Apple Services LATAM LLC.
             </p><hr>
 
-            <p>
+            <p id="copyright">
                 Copyright © 2022 Apple Inc. Todos os direitos reservados. Apple Computer Brasil Ltda. CNPJ: 00.623.904/0003-35
             </p>
+
+            <a id="country" href="#">Brasil</a>
             
             <ul>
                 <li>Política de Privacidade</li><hr>
@@ -277,5 +319,11 @@
             </ul>
         </footer>
     </main>
+    <script>
+        function clickMenu(){
+            storeApple.style.visibility = 'hidden' 
+            navDesk.style.display = 'inline'
+        }
+    </script>
 </body>
 </html>

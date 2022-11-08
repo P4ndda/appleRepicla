@@ -12,7 +12,7 @@
 @font-face {
     font-family: "SF Bold";
     src: url(fonts/SanFranciscoDisplay-Bold.otf);
-}
+}  
 
 @font-face{
     font-family: "SFtext Reg";
@@ -55,7 +55,7 @@
 
 
 
-header.header{
+header.cabecalho{
     top: 0%;
     position: fixed;
     background-color: var(--gray);
@@ -66,7 +66,8 @@ header.header{
 }
 
 header 
-ul {
+ul#navListDesktop {
+    height: 100%;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -74,7 +75,19 @@ ul {
 }
 
 header 
-ul li a, li#iconApple{
+ul#navListDesktop .navDesk{
+    display: none;
+}
+
+header 
+ul li button{
+    color: var(--white);
+    border: none;
+    background-color: var(--gray);
+}
+
+header ul
+li#iconApple, button{
     display: block;
     color: var(--white);
     width: 20px;
@@ -83,8 +96,9 @@ ul li a, li#iconApple{
 }
 
 header 
-ul li a:hover, li#iconApple:hover{
+ul li button:hover, li#iconApple:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 header 
@@ -97,6 +111,7 @@ ul li#iconApple{
     height: 25px;
     background-position: center;
     background-repeat: no-repeat;
+    margin: auto;
 }
 
 
@@ -396,16 +411,28 @@ article#appleTv
 }
 
 footer{
-    padding: 10px;
+    padding: 22px;
     background-color: #F5F5F7;
     font-family: var(--footerFont-Regular);
     font-size: 0.8em;
     color: #656568;
+    max-width: 980px;
 }
 
-footer p{ display: block; }
 
-footer hr{ margin: 9.5px 0px;}
+footer p{ display: block; 
+
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer hr{ margin: 10px 0px;}
+
+footer p#aboutApple{
+    margin-bottom: 15px;
+}
 
 footer > div#list{
     display: flex;
@@ -413,11 +440,13 @@ footer > div#list{
 }
 
 footer
-ul{ list-style: none;}
+ul{ list-style: none;
+    margin-bottom: 25px;
+}
 
 footer div#list 
 ul{ list-style: none;
-max-width: 100px;
+    max-width: 150px;
 }
 
 footer div#list 
@@ -435,12 +464,20 @@ ul li a{
     color: #656568;
 }
 
-footer div#list 
-ul li a:hover{
-    text-decoration: underline;
+footer p > a{
+    color: var(--blue);
+}
+
+footer p#copyright{display: inline-block;}
+
+footer a#country{
+    color: var(--black);
+    float: right;
+    text-align: end;
 }
 
 footer > ul{
+    color: var(--black);
     display: flex;
     justify-content: flex-start;
 }
