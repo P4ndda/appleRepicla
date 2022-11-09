@@ -5,56 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen" >
+    <link rel="stylesheet" href="styleTlabet.css" media="screen  and (min-width: 768px)">
     
     <title>Apple(Replica)</title>
 </head>
 <body>
-    <header class="cabecalho">
-            <ul id="navListDesktop">
+    <header id="headerNav">
+            <ul id="navListMobile">
                 <li id="menu">
                     <button href="#" onclick="clickMenu()">
                         <span class="material-symbols-outlined">drag_handle</span>
                     </button>
                 </li>
-                <li>
-                    
-                </li>
-                    <li class="navDesk">
-                        <a href="#">Mac</a>
-                    </li>
-
-                    <li class="navDesk">
-                        <a href="#">iPad</a>
-                    </li>
-
-                    <li class="navDesk">
-                        <a href="#">iPhone</a>
-                    </li>
-
-                    <li class="navDesk">
-                        <a href="#">Watch</a>
-                    </li>
-
-                    <li class="navDesk">
-                        <a href="#">AirPods</a>
-                    </li>
-
-                    <li class="navDesk">
-                        <a href="#">TV e casa</a>
-                    </li>
-
-                    <li class="navDesk">
-                        <a href="#">Só na Apple</a>
-                    </li>
-
-                    <li class="navDesk">
-                        <a href="#">Acessórios</a>
-                    </li>
-
-                    <li class="navDesk"> 
-                        <a href="#">Suporte</a>
-                    </li>
 
                 <li id="iconApple">
                     <a href="#">
@@ -68,15 +31,49 @@
                 </li>
             </ul>
 
+            <ul id="navListDesk">
+                <li class="navDesk">
+                    <a href="#">Mac</a>
+                </li>
+
+                <li class="navDesk">
+                    <a href="#">iPad</a>
+                </li>
+
+                <li class="navDesk">
+                    <a href="#">iPhone</a>
+                </li>
+
+                <li class="navDesk">
+                    <a href="#">Watch</a>
+                </li>
+
+                <li class="navDesk">
+                    <a href="#">AirPods</a>
+                </li>
+
+                <li class="navDesk">
+                    <a href="#">TV e casa</a>
+                </li>
+
+                <li class="navDesk">
+                    <a href="#">Só na Apple</a>
+                </li>
+
+                <li class="navDesk">
+                    <a href="#">Acessórios</a>
+                </li>
+
+                <li class="navDesk"> 
+                    <a href="#">Suporte</a>
+                </li>
+            </ul>
     </header>
     <main>
         <section id="iPad">
                 <div class="textSection">
                     <h2>iPad</h2>
                     <h3>Inspira. Desenha. Diverte</h3>
-                    <p>
-                        Confira em breve a disponibilidade
-                    </p>
 
                     <a class="one" href="#">Saiba mais</a>
                     <a href="#">Ver preços</a>
@@ -321,8 +318,9 @@
     </main>
     <script>
         function clickMenu(){
-            storeApple.style.visibility = 'hidden' 
-            navDesk.style.display = 'inline'
+            storeApple.style.visibility = 'hidden'
+            document.getElementById('headerNav').style.backgroundColor = 'black'
+            document.getElementById('headerNav').style.height = '100vh'
         }
     </script>
 </body>

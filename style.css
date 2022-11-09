@@ -53,9 +53,7 @@
     text-decoration: none;
 }
 
-
-
-header.cabecalho{
+header#headerNav{
     top: 0%;
     position: fixed;
     background-color: var(--gray);
@@ -66,17 +64,12 @@ header.cabecalho{
 }
 
 header 
-ul#navListDesktop {
+ul#navListMobile {
     height: 100%;
     list-style: none;
     display: flex;
     justify-content: space-between;
     color: var(--white);
-}
-
-header 
-ul#navListDesktop .navDesk{
-    display: none;
 }
 
 header 
@@ -90,8 +83,8 @@ header ul
 li#iconApple, button{
     display: block;
     color: var(--white);
-    width: 20px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     opacity: .7;
 }
 
@@ -107,17 +100,17 @@ ul li#iconApple{
     display: inline-block;
     background-image: url(icons/apple-icon.png);
     background-size: contain;
-    width: 20px;
-    height: 25px;
+    width: 25px;
+    height: 20px;
     background-position: center;
     background-repeat: no-repeat;
-    margin: auto;
 }
 
-
+header
+ul#navListDesk{display: none;}
 
 section{
-    height: var(--heightSetion);
+    height: 500px;
     background-color: #FBFBFD;
     margin-bottom: 10px;
 }
@@ -132,27 +125,27 @@ section{
 h2, h4 { font-family: var(--titleFont); }
 
 .textSection h2{
-    padding-top: 60px;
+    padding-top: 90px;
     font-weight: bold;
-    font-size: 4.5em;
+    font-size: 2em;
 }
 
 .textSection h3{
     font-family: var(--commonFont);
     font-weight: normal;
-    font-size: 2em;
-    padding-bottom: 15px;
+    font-size: 1.2em;
+    padding-bottom: 8px;
 }
 
 .textSection p{
     padding-bottom: 15px;
-    font-size: 1.6em;
+    font-size: 0.8em;
     color: var(--colorSubTitle);
 }
 
 .textSection a{
     color: var(--blue);
-    font-size: 1.6em;
+    font-size: 1em;
 
 }
 
@@ -174,8 +167,7 @@ a::after:hover{
 
 .textSection a:hover{
     text-decoration: underline;
-}   
-
+}  
 
 section#iPad{
     position: relative;
@@ -183,16 +175,7 @@ section#iPad{
     background-image: url(img/iPad.png);
     background-repeat: no-repeat;
     background-position:  left 25% center;
-}
-
-section#iPad
-.textSection{
-    padding-left: 80px;
-    position: absolute;
-    top: 50%;
-    left: 45%;
-
-    transform: translateY(-50%);
+    background-size: 250px;
 }
 
 section.backgroungBlack{
@@ -203,283 +186,3 @@ section.backgroungBlack{
     background-position: bottom center;
     background-size: 850px;
 }
-
-section.backgroungBlack
-.textSection{
-    color: white;
-}
-section#Bigwatch{
-    background-image: url(img/bigAppleWatch.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: contain;
-    background-size: 1100px;
-}
-
-section#Bigwatch .textSection{
-    padding-top: 80px;
-}
-
-section#Bigwatch .textSection h2{
-    font-family: var(--constraTitle);
-    font-size: 2.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-
-}
-
-.textSection h2.iconTitle{
-    text-transform: uppercase;
-}
-
-.textSection h2.iconTitle::before{
-    content: '';
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background-image: url(icons/apple-iconBlack.png);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-section#Bigwatch
-.textSection h4{
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-family: var(--titleFont);
-    font-size: 1.2em;
-    color: var(--orange);
-}
-
-/*Config class - TwoArticles*/
-
-section.twoArticles{
-    height: var(--heightSectionTwo);
-    padding: 5px 10px 0px 10px;
-}
-
-section.twoArticles
-article{
-    height: 100%;
-    width: 49%;
-}
-
-/* title icons (ARTICLE)*/
-section.twoArticles article
-.textSection 
-h2.iconTitle::before{width: 30px; height: 30px;}
-
-section.twoArticles
-article.left{
-    display: block;
-    float: left;
-    color: var(--white);
-}
-
-section.twoArticles
-article.right{
-    display: block;
-    float: right;
-}
-
-section.twoArticles
-article
-h2{font-size: 2.25em;}
-
-section.twoArticles
-article
-h3{font-size: 1.5em;}
-
-
-section.twoArticles
-article
-h4{font-size: 0.8em;}
-
-/*Article WorldWatch*/
-
-article#worldWatch{
-    font-family: var(--constraTitle);
-    background-color: var(--black);
-    background-image: url(img/appleWatch.png);
-
-    background-repeat: no-repeat;
-    background-position: bottom center;
-}
-
-article#worldWatch
-.textSection  h2{ text-transform: uppercase; }
-
-article#worldWatch
-.textSection 
-h2.iconTitle::before{background-image: url(icons/apple-icon.png);}
-
-article#worldWatch
-.textSection  h4{
-    text-transform: uppercase;
-
-    letter-spacing: 1.5px;
-    padding-bottom: 15px;
-
-    color: var(--red);
-}
-
-/*Article HandsAndIphone*/
-
-article#handsAndIphone{
-    background-color: var(--divBackground);
-    background-image: url(img/handsAndIphonePqn.png);
-    background-repeat: no-repeat;
-    background-position:  bottom center;
-}
-
-/*Article iPad Pro*/
-
-article#iPadsPro{
-    position: relative;
-    backdrop-filter: blur(1px);
-    background-color: var(--black);
-    backdrop-filter: blur(20px);
-}
-
-article#iPadsPro
-div#color-Black{
-
-    background-color: black;
-}
-
-article#iPadsPro
-div#gradientColor{
-    position: absolute;
-    top: 50%;
-    transform: translatey(-25%);
-
-    height: 250px;
-    width: 100%;
-
-    background-image: linear-gradient(to right, var(--blue), #c61f8b);
-}
-
-
-/*Article Airpods*/
-
-article#airPods{
-    background-color: var(--black);
-    background-image: url(img/airPods.png);
-    background-repeat: no-repeat;
-    background-position:  bottom center;
-}
-
-/*Article Watches*/
-
-article#watchs{
-    background-image: url(img/appleWatchs.png);
-    background-repeat: no-repeat;
-    background-position: bottom 63px center;
-}
-
-article#watchs
-.textSection
-h4{
-    color: var(--red);
-    text-transform: uppercase;
-}
-
-/*Article apple Tv*/
-
-article#appleTv{
-    background-image: url(img/appleTv.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-}
-
-article#appleTv
-.textSection h2{
-    text-transform: none;
-}
-
-article#appleTv
-.textSection h2 #highlighted{
-    font-family: var(--constraTitle);
-    display: inline;
-
-    background-image: linear-gradient( 125deg, #e62884 24%, #f1582b 51%, #3878bc 58%, #b7d84d 86%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    color: black;
-}
-
-footer{
-    padding: 22px;
-    background-color: #F5F5F7;
-    font-family: var(--footerFont-Regular);
-    font-size: 0.8em;
-    color: #656568;
-    max-width: 980px;
-}
-
-
-footer p{ display: block; 
-
-}
-
-footer a:hover{
-    text-decoration: underline;
-}
-
-footer hr{ margin: 10px 0px;}
-
-footer p#aboutApple{
-    margin-bottom: 15px;
-}
-
-footer > div#list{
-    display: flex;
-    justify-content: space-around;
-}
-
-footer
-ul{ list-style: none;
-    margin-bottom: 25px;
-}
-
-footer div#list 
-ul{ list-style: none;
-    max-width: 150px;
-}
-
-footer div#list 
-h4{
-    font-family: var(--footerFont-SemiBold);
-    color: var(--colorTitle);
-    padding: 15px 0px 5px 0px;
-}
-
-footer div#list 
-ul li {padding: 5px 0px;}
-
-footer div#list 
-ul li a{
-    color: #656568;
-}
-
-footer p > a{
-    color: var(--blue);
-}
-
-footer p#copyright{display: inline-block;}
-
-footer a#country{
-    color: var(--black);
-    float: right;
-    text-align: end;
-}
-
-footer > ul{
-    color: var(--black);
-    display: flex;
-    justify-content: flex-start;
-}
-
-footer > ul hr{ margin: 0px 10px;}
