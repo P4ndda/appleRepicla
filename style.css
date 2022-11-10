@@ -180,7 +180,7 @@ section#iPad{
 
 section.backgroungBlack{
     background-color: black;
-    background-image: url(img/iphone14.png);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom center;
