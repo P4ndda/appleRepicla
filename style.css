@@ -109,31 +109,34 @@ ul li#iconApple{
 header
 ul#navListDesk{display: none;}
 
-section{
-    height: 500px;
+section, article{
+    height: 620px;
     background-color: #FBFBFD;
     margin-bottom: 10px;
+}
+
+section.twoArticles{
+    height: 1240px;
 }
 
 .textSection{
     display: block;
     text-align: center;
-    height: 50%;
 }
 
 .textSection 
 h2, h4 { font-family: var(--titleFont); }
 
 .textSection h2{
-    padding-top: 90px;
+    padding-top: 40px;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.4em;
 }
 
 .textSection h3{
     font-family: var(--commonFont);
     font-weight: normal;
-    font-size: 1.2em;
+    font-size: 1.4em;
     padding-bottom: 8px;
 }
 
@@ -145,7 +148,7 @@ h2, h4 { font-family: var(--titleFont); }
 
 .textSection a{
     color: var(--blue);
-    font-size: 1em;
+    font-size: 1.2em;
 
 }
 
@@ -167,22 +170,184 @@ a::after:hover{
 
 .textSection a:hover{
     text-decoration: underline;
-}  
+} 
+
+.textSection h2.iconTitle{
+    text-transform: uppercase;
+}
+
+.textSection h2.iconTitle::before{
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url(icons/apple-iconBlack.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 section#iPad{
     position: relative;
     background-color: var(--divBackground);
     background-image: url(img/iPad.png);
     background-repeat: no-repeat;
-    background-position:  left 25% center;
-    background-size: 250px;
+    background-position: bottom 25px center;
+    background-size: 300px;
+}
+
+section#iPad
+.textSection h2{
+    padding-top: 80px;
 }
 
 section.backgroungBlack{
-    background-color: black;
-    background-image: url();
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: bottom center;
-    background-size: 850px;
+    
+    background-color: black;
+    background-image: url(img/mobile/iphone14.png);
+}
+
+section.backgroungBlack
+.textSection{
+    color: white;
+}
+
+section#Bigwatch{
+    background-image: url(img/mobile/bigAppleWatch.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    background-size: 900px;
+}
+
+section#Bigwatch .textSection{
+    padding-top: 40px;
+}
+
+section#Bigwatch .textSection h2{
+    font-family: var(--constraTitle);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+section#Bigwatch
+.textSection h4{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: var(--titleFont);
+    font-size: 1.2em;
+    color: var(--orange);
+}
+
+article#worldWatch{
+    font-family: var(--constraTitle);
+    background-color: var(--black);
+    background-image: url(img/appleWatch.png);
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+article#worldWatch
+.textSection{
+    color: var(--white);
+}
+
+article#worldWatch
+.textSection  h2{ text-transform: uppercase; }
+
+article#worldWatch
+.textSection 
+h2.iconTitle::before{background-image: url(icons/apple-icon.png);}
+
+article#worldWatch
+.textSection  h4{
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+    padding-bottom: 15px;
+
+    color: var(--red);
+}
+
+article#handsAndIphone{
+    background-repeat: no-repeat;
+    background-position:  bottom center;
+
+    background-image: url(img/mobile/handsAndIphone.png);
+    background-color: var(--divBackground);
+}
+
+article#iPadsPro{
+    color: var(--white);
+    position: relative;
+    backdrop-filter: blur(1px);
+    background-color: var(--black);
+    backdrop-filter: blur(20px);
+}
+
+article#iPadsPro
+div#color-Black{
+
+    background-color: black;
+}
+
+article#iPadsPro
+div#gradientColor{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-25%);
+
+    height: 250px;
+    width: 100%;
+
+    background-image: linear-gradient(to right, var(--blue), #c61f8b);
+}
+
+article#appleTv{
+    background-image: url(img/appleTv.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+article#appleTv
+.textSection h2{
+    text-transform: none;
+}
+
+article#appleTv
+.textSection h2 #highlighted{
+    font-family: var(--constraTitle);
+    display: inline;
+
+    background-image: linear-gradient( 125deg, #e62884 24%, #f1582b 51%, #3878bc 58%, #b7d84d 86%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: black;
+}
+
+article#airPods{
+    color: var(--white);
+    background-color: var(--black);
+    background-image: url(img/airPods.png);
+    background-repeat: no-repeat;
+    background-position:  bottom center;
+}
+
+article#watchs{
+    background-image: url(img/appleWatchs.png);
+    background-repeat: no-repeat;
+    background-position: bottom 63px center;
+}
+
+article#watchs
+.textSection
+h4{
+    color: var(--red);
+    text-transform: uppercase;
 }

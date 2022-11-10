@@ -30,53 +30,16 @@ section.backgroungBlack{
     background-size: 850px;
 }
 
-section.backgroungBlack
-.textSection{
-    color: white;
-}
-section#Bigwatch{
-    background-image: url(img/bigAppleWatch.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: contain;
-    background-size: 1100px;
-}
+
+
 
 section#Bigwatch .textSection{
     padding-top: 80px;
 }
 
-section#Bigwatch .textSection h2{
-    font-family: var(--constraTitle);
-    font-size: 2.5em;
-    text-transform: uppercase;
-    font-weight: bold;
+section#Bigwatch .textSection h2{font-size: 2.5em;}
 
-}
 
-.textSection h2.iconTitle{
-    text-transform: uppercase;
-}
-
-.textSection h2.iconTitle::before{
-    content: '';
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background-image: url(icons/apple-iconBlack.png);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-section#Bigwatch
-.textSection h4{
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-family: var(--titleFont);
-    font-size: 1.2em;
-    color: var(--orange);
-}
 
 /*Config class - TwoArticles*/
 
@@ -124,67 +87,19 @@ h4{font-size: 0.8em;}
 
 /*Article WorldWatch*/
 
-article#worldWatch{
-    font-family: var(--constraTitle);
-    background-color: var(--black);
-    background-image: url(img/appleWatch.png);
-
-    background-repeat: no-repeat;
-    background-position: bottom center;
-}
-
 article#worldWatch
 .textSection  h2{ text-transform: uppercase; }
 
-article#worldWatch
-.textSection 
-h2.iconTitle::before{background-image: url(icons/apple-icon.png);}
-
-article#worldWatch
-.textSection  h4{
-    text-transform: uppercase;
-
-    letter-spacing: 1.5px;
-    padding-bottom: 15px;
-
-    color: var(--red);
-}
 
 /*Article HandsAndIphone*/
 
-article#handsAndIphone{
-    background-color: var(--divBackground);
-    background-image: url(img/handsAndIphonePqn.png);
-    background-repeat: no-repeat;
-    background-position:  bottom center;
-}
+
 
 /*Article iPad Pro*/
 
-article#iPadsPro{
-    position: relative;
-    backdrop-filter: blur(1px);
-    background-color: var(--black);
-    backdrop-filter: blur(20px);
-}
 
-article#iPadsPro
-div#color-Black{
 
-    background-color: black;
-}
 
-article#iPadsPro
-div#gradientColor{
-    position: absolute;
-    top: 50%;
-    transform: translatey(-25%);
-
-    height: 250px;
-    width: 100%;
-
-    background-image: linear-gradient(to right, var(--blue), #c61f8b);
-}
 
 
 /*Article Airpods*/
@@ -198,43 +113,11 @@ article#airPods{
 
 /*Article Watches*/
 
-article#watchs{
-    background-image: url(img/appleWatchs.png);
-    background-repeat: no-repeat;
-    background-position: bottom 63px center;
-}
 
-article#watchs
-.textSection
-h4{
-    color: var(--red);
-    text-transform: uppercase;
-}
 
 /*Article apple Tv*/
 
-article#appleTv{
-    background-image: url(img/appleTv.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-}
 
-article#appleTv
-.textSection h2{
-    text-transform: none;
-}
-
-article#appleTv
-.textSection h2 #highlighted{
-    font-family: var(--constraTitle);
-    display: inline;
-
-    background-image: linear-gradient( 125deg, #e62884 24%, #f1582b 51%, #3878bc 58%, #b7d84d 86%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    color: black;
-}
 
 footer{
     padding: 22px;
@@ -243,6 +126,7 @@ footer{
     font-size: 0.8em;
     color: #656568;
     max-width: 980px;
+    margin: auto;
 }
 
 
