@@ -169,27 +169,9 @@ h4{
 footer div#list 
 ul li {padding: 5px 0px;}
 
-footer div#list 
-ul li a{
-    color: #656568;
-}
 
-footer p > a{
-    color: var(--blue);
-}
 
-footer p#copyright{display: inline-block;}
 
-footer a#country{
-    color: var(--black);
-    float: right;
-    text-align: end;
-}
 
-footer > ul{
-    color: var(--black);
-    display: flex;
-    justify-content: flex-start;
-}
 
-footer > ul hr{ margin: 0px 10px;}
+

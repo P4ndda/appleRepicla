@@ -378,7 +378,7 @@ footer{
     padding: 22px;
     background-color: #F5F5F7;
     font-family: var(--footerFont-Regular);
-    font-size: 0.8em;
+    font-size: 1.1em;
     color: #656568;
     max-width: 980px;
     margin: auto;
@@ -390,6 +390,60 @@ footer p{
     line-height: 1.4em;
 }
 
-footer hr{ margin: 15px 0px;}
+footer > hr{ margin: 26px 0px;}
 
-footer#footerDesk{display: none;}
+
+footer div#list{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+footer div#list
+a.title > h4{
+    color: #656568;
+    font-size: 1em;
+    font-family: var(--footerFont-Regular);
+    padding: 16px 0px;
+    opacity: 0.7;
+}
+
+footer div#list
+a.title > h4::after{
+    
+    content: "+";
+}
+
+footer div#list
+a.title > h4:hover{
+    opacity: 1;
+}
+
+footer div#list 
+ul li {display: none;}
+
+footer div#list 
+ul li a{
+    color: #656568;
+}
+
+footer p > a{
+    color: var(--blue);
+}
+
+footer p#copyright{display: inline-block;}
+
+footer a#country{
+    color: var(--black);
+    display: block;
+    padding: 20px 0px;
+}
+
+footer > ul{
+    color: var(--black);
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+footer > ul hr{ margin: 0px 10px;}
