@@ -40,8 +40,8 @@
     --constraTitle: "SF Bold";
     --footerFont-Regular: "SFtext Reg";
     --footerFont-SemiBold: "SFtext SemBo";
-    --heightSetion: 880px;
-    --heightSectionTwo: 630px;
+    --heightSetion: 760px;
+    --heightSectionTwo: 750px;
     --linearGradient: (to right, var(--blue), #c61f8b);
 }
 
@@ -59,8 +59,8 @@ header#headerNav{
     top: 0%;
     position: fixed;
     background-color: var(--gray);
-    width: 98vw;
-    padding: 17.5px 10px;
+    width: 97vw;
+    padding: 25px 15px;
     z-index: 999;
     opacity: 0.98;
 }
@@ -111,11 +111,6 @@ ul li#iconApple{
 header
 ul#navListDesk{display: none;}
 
-section{
-    height: 560px;
-    background-color: #FBFBFD;
-    margin-bottom: 15px;
-}
 
 .textSection{
     display: block;
@@ -126,16 +121,17 @@ section{
 h2, h4 { font-family: var(--titleFont); }
 
 .textSection h2{
-    padding-top: 40px;
+    padding-top: 55px;
     font-weight: bold;
-    font-size: 2.4em;
+    font-size: 3.2em;
+    padding-bottom: 5px;
 }
 
 .textSection h3{
     font-family: var(--commonFont);
     font-weight: normal;
-    font-size: 1.4em;
-    padding-bottom: 8px;
+    font-size: 1.8em;
+    padding-bottom: 15px;
 }
 
 .textSection p{
@@ -146,7 +142,7 @@ h2, h4 { font-family: var(--titleFont); }
 
 .textSection a{
     color: var(--blue);
-    font-size: 1.2em;
+    font-size: 1.6em;
 
 }
 
@@ -185,14 +181,19 @@ a::after:hover{
     background-repeat: no-repeat;
 }
 
+section{
+    height: var(--heightSetion);
+    background-color: #FBFBFD;
+    margin-bottom: 15px;
+}
+
 section#iPad{
-    height: 615px;
+    height: calc(var(--heightSetion) + 50px );
     position: relative;
     background-color: var(--divBackground);
-    background-image: url(img/iPad.png);
+    background-image: url(img/mobile/iPad.png);
     background-repeat: no-repeat;
-    background-position: bottom 20px center;
-    background-size: 280px;
+    background-position: bottom 35px center;
 }
 
 section#iPad
@@ -206,7 +207,7 @@ section.backgroungBlack{
     
     background-color: black;
     background-image: url(img/mobile/iphone14.png);
-    background-size: 280px;
+
 }
 
 section.backgroungBlack
@@ -219,7 +220,7 @@ section#Bigwatch{
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
-    background-size: 900px;
+    background-size: 1120px;
 }
 
 section#Bigwatch .textSection{
@@ -244,37 +245,37 @@ section#Bigwatch
 }
 
 section.twoArticles{
-    height: 1120px;
+    height: 1510px;
 }
 
 article{
-    height: 560px;
+    height: var(--heightSectionTwo);
     padding-bottom: 15px;
 }
 
 article
-.textSection h2{font-size: 2.3em;}
+.textSection h2{font-size: 2.8em;}
 
 article
-.textSection h3{font-size: 1.3em;}
+.textSection h3{font-size: 1.8em;}
 
 article
-.textSection p{font-size: 1.2em;}
+.textSection p{font-size: 1.7em;}
 
 article
 .textSection h4{
-    font-size: 0.8em;
+    font-size: 1.2em;
     text-transform: uppercase;
 }
 
 article .textSection 
 h2.iconTitle{
-    font-size: 1.8em;
-    letter-spacing: 2px;
+    font-size: 2.4em;
+    letter-spacing: 2.2px;
 }
 
 article .textSection 
-h2.iconTitle::before{height: 25px;}
+h2.iconTitle::before{height: 35px;}
 
 article#worldWatch{
     font-family: var(--constraTitle);
@@ -339,7 +340,7 @@ article#appleTv{
 
 article#appleTv
 .textSection h2{
-    font-size: 2em;
+    font-size: 2.8em;
     text-transform: none;
 }
 

@@ -1,3 +1,36 @@
+header{
+    height: 65px;
+}
+
+section{
+    height: calc(var(--heightSetion) + 210px);
+}
+
+section#iPad{
+    height: calc(var(--heightSetion) + 280px);
+    background-image: url(img/iPad.png);
+}
+
+
+.textSection h2{
+    padding-top: 95px;
+    font-size: 4.5em
+}
+
+.textSection h3{
+    font-size: 2.3em;
+    padding-bottom: 15px;
+}
+
+.textSection a{
+    font-size: 1.8em;
+}
+
+section#Bigwatch{
+    background-image: url(img/bigAppleWatch.png);
+
+}
+
 
 
 
