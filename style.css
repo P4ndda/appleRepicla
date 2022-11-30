@@ -40,8 +40,8 @@
     --constraTitle: "SF Bold";
     --footerFont-Regular: "SFtext Reg";
     --footerFont-SemiBold: "SFtext SemBo";
-    --heightSetion: 760px;
-    --heightSectionTwo: 750px;
+    --heightSetion: 500px;
+    --heightSectionTwo: 500px;
     --linearGradient: (to right, var(--blue), #c61f8b);
 }
 
