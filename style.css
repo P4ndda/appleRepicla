@@ -60,7 +60,7 @@ header#headerNav{
     position: fixed;
     background-color: var(--gray);
     width: 97vw;
-    padding: 25px 15px;
+    padding: 15px 10px;
     z-index: 999;
     opacity: 0.98;
 }
@@ -121,17 +121,16 @@ ul#navListDesk{display: none;}
 h2, h4 { font-family: var(--titleFont); }
 
 .textSection h2{
-    padding-top: 55px;
+    padding-top: 25px;
     font-weight: bold;
-    font-size: 3.2em;
-    padding-bottom: 5px;
+    font-size: 2.4em;
 }
 
 .textSection h3{
     font-family: var(--commonFont);
     font-weight: normal;
-    font-size: 1.8em;
-    padding-bottom: 15px;
+    font-size: 1.4em;
+    padding-bottom: 8px;
 }
 
 .textSection p{
@@ -142,7 +141,7 @@ h2, h4 { font-family: var(--titleFont); }
 
 .textSection a{
     color: var(--blue);
-    font-size: 1.6em;
+    font-size: 1.2em;
 
 }
 
@@ -184,7 +183,7 @@ a::after:hover{
 section{
     height: var(--heightSetion);
     background-color: #FBFBFD;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 section#iPad{
@@ -193,7 +192,7 @@ section#iPad{
     background-color: var(--divBackground);
     background-image: url(img/mobile/iPad.png);
     background-repeat: no-repeat;
-    background-position: bottom 35px center;
+    background-position: bottom 20px center;
 }
 
 section#iPad
@@ -207,7 +206,6 @@ section.backgroungBlack{
     
     background-color: black;
     background-image: url(img/mobile/iphone14.png);
-
 }
 
 section.backgroungBlack
@@ -220,16 +218,16 @@ section#Bigwatch{
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
-    background-size: 1120px;
+    background-size: 780px;
 }
 
 section#Bigwatch .textSection{
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 section#Bigwatch .textSection h2{
     font-family: var(--constraTitle);
-    font-size: 2.5em;
+    font-size: 1.8em;
     text-transform: uppercase;
     font-weight: bold;
 
@@ -240,12 +238,12 @@ section#Bigwatch
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-family: var(--titleFont);
-    font-size: 1.2em;
+    font-size: 0.7em;
     color: var(--orange);
 }
 
 section.twoArticles{
-    height: 1510px;
+    height: calc( var(--heightSectionTwo) * 2);
 }
 
 article{
@@ -254,28 +252,28 @@ article{
 }
 
 article
-.textSection h2{font-size: 2.8em;}
+.textSection h2{font-size: 1.8em;}
 
 article
-.textSection h3{font-size: 1.8em;}
+.textSection h3{font-size: 1.3em;}
 
 article
-.textSection p{font-size: 1.7em;}
+.textSection p, a{font-size: 1em;}
 
 article
 .textSection h4{
-    font-size: 1.2em;
+    font-size: 0.7em;
     text-transform: uppercase;
 }
 
 article .textSection 
 h2.iconTitle{
-    font-size: 2.4em;
+    font-size: 1.8em;
     letter-spacing: 2.2px;
 }
 
 article .textSection 
-h2.iconTitle::before{height: 35px;}
+h2.iconTitle::before{height: 25px;}
 
 article#worldWatch{
     font-family: var(--constraTitle);
@@ -307,7 +305,7 @@ article#handsAndIphone{
     background-repeat: no-repeat;
     background-position:  bottom center;
 
-    background-image: url(img/mobile/handsAndIphone.png);
+    background-image: url(img/handsAndIphone.png);
     background-color: var(--divBackground);
 }
 
@@ -340,8 +338,9 @@ article#appleTv{
 
 article#appleTv
 .textSection h2{
-    font-size: 2.8em;
+    font-size: 2.2em;
     text-transform: none;
+    letter-spacing: normal;
 }
 
 article#appleTv
@@ -367,7 +366,7 @@ article#airPods{
 article#watchs{
     background-image: url(img/appleWatchs.png);
     background-repeat: no-repeat;
-    background-position: bottom 63px center;
+    background-position: bottom 45px center;
     background-color: var(--divBackground);
 }
 
@@ -376,7 +375,7 @@ article#watchs
 h4{ color: var(--red);}
 
 footer{
-    padding: 22px;
+    padding: 15px;
     background-color: #F5F5F7;
     font-family: var(--footerFont-Regular);
     font-size: 1.1em;
@@ -386,65 +385,66 @@ footer{
 }
 
 footer p{ 
-    font-size: 1.1em;
-    padding-bottom: 10px;
+    font-size: 0.75em;
     line-height: 1.4em;
 }
 
-footer > hr{ margin: 26px 0px;}
+footer > hr{ margin: 20px 0px;}
 
-
-footer div#list{
-    margin-top: 35px;
-    margin-bottom: 20px;
-}
-
+footer div#list{padding-bottom: 17px;}
 
 footer div#list
 a.title > h4{
     color: #656568;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: var(--footerFont-Regular);
-    padding: 16px 0px;
+    padding: 10px 0px;
     opacity: 0.7;
 }
 
 footer div#list
-a.title > h4::after{
-    
-    content: "+";
-}
+a.title > h4::after{content: "+";}
 
 footer div#list
 a.title > h4:hover{
     opacity: 1;
+    text-decoration: none;
 }
 
 footer div#list 
 ul li {display: none;}
 
 footer div#list 
-ul li a{
-    color: #656568;
-}
+ul li a{color: #656568;}
 
 footer p > a{
+    font-size: 1em;
     color: var(--blue);
 }
 
-footer p#copyright{display: inline-block;}
-
-footer a#country{
+footer a{
+    font-size: 0.7em;
     color: var(--black);
-    display: block;
-    padding: 20px 0px;
 }
 
-footer > ul{
-    color: var(--black);
+footer > a:hover, 
+p > a:hover, 
+ul#aside li > a:hover{
+    text-decoration: underline;
+}
+
+footer a#country{
+    display: block;
+    margin: 20px 0px;
+}
+
+footer ul#aside{
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     list-style: none;
 }
 
-footer > ul hr{ margin: 0px 10px;}
+footer ul#aside > hr{
+    margin: 0px 10px;
+}
+
