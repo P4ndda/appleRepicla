@@ -172,8 +172,8 @@ a::after:hover{
 .textSection h2.iconTitle::before{
     content: '';
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     background-image: url(icons/apple-iconBlack.png);
     background-size: contain;
     background-position: center center;
@@ -221,9 +221,7 @@ section#Bigwatch{
     background-size: 780px;
 }
 
-section#Bigwatch .textSection{
-    padding-top: 20px;
-}
+section#Bigwatch .textSection{padding-top: 20px;}
 
 section#Bigwatch .textSection h2{
     font-family: var(--constraTitle);
@@ -240,6 +238,7 @@ section#Bigwatch
     font-family: var(--titleFont);
     font-size: 0.7em;
     color: var(--orange);
+    padding-bottom: 10px;
 }
 
 section.twoArticles{
@@ -278,7 +277,7 @@ h2.iconTitle::before{height: 25px;}
 article#worldWatch{
     font-family: var(--constraTitle);
     background-color: var(--black);
-    background-image: url(img/appleWatch.png);
+    background-image: url(img/mobile/appleWatch.png);
 
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -305,7 +304,7 @@ article#handsAndIphone{
     background-repeat: no-repeat;
     background-position:  bottom center;
 
-    background-image: url(img/handsAndIphone.png);
+    background-image: url(img/mobile/handsAndIphone.png);
     background-color: var(--divBackground);
 }
 
@@ -330,7 +329,7 @@ div#gradientColor{
 }
 
 article#appleTv{
-    background-image: url(img/appleTv.png);
+    background-image: url(img/mobile/appleTv.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-color: var(--divBackground);
@@ -358,13 +357,13 @@ article#appleTv
 article#airPods{
     color: var(--white);
     background-color: var(--black);
-    background-image: url(img/airPods.png);
+    background-image: url(img/mobile/airPods.png);
     background-repeat: no-repeat;
     background-position:  bottom center;
 }
 
 article#watchs{
-    background-image: url(img/appleWatchs.png);
+    background-image: url(img/mobile/appleWatchs.png);
     background-repeat: no-repeat;
     background-position: bottom 45px center;
     background-color: var(--divBackground);
@@ -378,7 +377,7 @@ footer{
     padding: 15px;
     background-color: #F5F5F7;
     font-family: var(--footerFont-Regular);
-    font-size: 1.1em;
+
     color: #656568;
     max-width: 980px;
     margin: auto;
