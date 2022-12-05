@@ -7,68 +7,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css" media="screen" >
     <link rel="stylesheet" href="styleTlabet.css" media="screen  and (min-width: 768px)">
+    <link rel="stylesheet" href="styleTv.css" media="screen and (min-width: 992px)">
+
     <script src="script.js"></script>
     
     <title>Apple(Replica)</title>
 </head>
 <body>
-    <header id="headerNav">
-            <ul id="navListMobile">
-                <li id="menu">
-                    <button href="#" onclick="clickMenu()">
-                        <span class="material-symbols-outlined">drag_handle</span>
-                    </button>
-                </li>
+    <header>
+        <ul id="navMobile">
+            <li>
+                <div id="menu">
+                    <div id="lineTop"></div>
+                    <div id="lineBottom"></div>
+                </div>
+            </li>
+            <li id="iconApple">
 
-                <li id="iconApple">
-                    <a href="#">
+            </li>
+            <li id="bag">
 
-                    </a>                    
-                </li>
-                <li id="storeApple">
-                    <button href="#">
-                        <span class="material-symbols-outlined">shopping_bag</span>
-                    </button>
-                </li>
-            </ul>
-
-            <ul id="navListDesk">
-                <li class="navDesk">
-                    <a href="#">Mac</a>
-                </li>
-
-                <li class="navDesk">
-                    <a href="#">iPad</a>
-                </li>
-
-                <li class="navDesk">
-                    <a href="#">iPhone</a>
-                </li>
-
-                <li class="navDesk">
-                    <a href="#">Watch</a>
-                </li>
-
-                <li class="navDesk">
-                    <a href="#">AirPods</a>
-                </li>
-
-                <li class="navDesk">
-                    <a href="#">TV e casa</a>
-                </li>
-
-                <li class="navDesk">
-                    <a href="#">Só na Apple</a>
-                </li>
-
-                <li class="navDesk">
-                    <a href="#">Acessórios</a>
-                </li>
-
-                <li class="navDesk"> 
-                    <a href="#">Suporte</a>
-                </li>
-            </ul>
+            </li>
+        </ul>
     </header>
     <main>
         <section id="iPad">
@@ -202,116 +162,118 @@
             </article>
         </section>
 
-        <footer id="mobile">
-            <p>O Apple TV+ custa R$ 14,90 por mês após o período de teste gratuito. Uma assinatura por grupo de Compartilhamento Familiar. Oferta válida por três meses a partir da data de ativação do aparelho qualificado. A assinatura é renovada automaticamente até que seja cancelada. Aplicam-se outros termos e restrições.</p>
-            
-            <hr>
+        <footer>
 
-            <div id="list">
-                <ul>
-                    <a onclick="clickUl()" class="title">
-                        <h4>Descobrir e comprar</h4>
-                    </a><hr>
+            <div id="content">
+                <p>O Apple TV+ custa R$ 14,90 por mês após o período de teste gratuito. Uma assinatura por grupo de Compartilhamento Familiar. Oferta válida por três meses a partir da data de ativação do aparelho qualificado. A assinatura é renovada automaticamente até que seja cancelada. Aplicam-se outros termos e restrições.</p>
+                
+                <hr>
 
-                    <div class="descobrir">
-                        <li><a href="">Loja</a></li>
-                        <li><a href="">Mac</a></li>
-                        <li><a href="">iPad</a></li>
-                        <li><a href="">iPhone</a></li>
-                        <li><a href="">Watch</a></li>
-                        <li><a href="">AirPods</a></li>
-                        <li><a href="">Tv e casa</a></li>
-                        <li><a href="">AirTag</a></li>
-                        <li><a href="">Acessórios</a></li>
-                    </div>
-                </ul>
-                <ul>
-                    <a href="#" class="title">
-                        <h4>Serviços</h4>
-                    </a><hr>
+                <div id="list">
+                    <ul>
+                        <a onclick="clickUl()" class="title">
+                            <h4>Descobrir e comprar</h4>
+                        </a><hr>
 
-                    <li><a href="">Apple Music</a></li>
-                    <li><a href="">Apple TV+</a></li>
-                    <li><a href="">Apple Fitnnes+</a></li>
-                    <li><a href="">Apple Arcade</a></li>
-                    <li><a href="">iClod</a></li>
-                    <li><a href="">Apple One</a></li>
-                    <li><a href="">Apple Pay</a></li>
-                    <li><a href="">Livros</a></li>
-                    <li><a href="">Apple Podcasts</a></li>
-                    <li><a href="">Apple Store</a></li>
-                    
-                    <a href="#" class="title">
-                        <h4>Sua conta</h4>
-                    </a><hr>
+                        <div class="descobrir">
+                            <li><a href="">Loja</a></li>
+                            <li><a href="">Mac</a></li>
+                            <li><a href="">iPad</a></li>
+                            <li><a href="">iPhone</a></li>
+                            <li><a href="">Watch</a></li>
+                            <li><a href="">AirPods</a></li>
+                            <li><a href="">Tv e casa</a></li>
+                            <li><a href="">AirTag</a></li>
+                            <li><a href="">Acessórios</a></li>
+                        </div>
+                    </ul>
+                    <ul>
+                        <a href="#" class="title">
+                            <h4>Serviços</h4>
+                        </a><hr>
 
-                    <li><a href="">Gerenciar seu ID Apple</a></li>
-                    <li><a href="">Conta da Apple Store</a></li>
-                    <li><a href="">iCloud.com</a></li>
-                </ul>
-                <ul>
+                        <li><a href="">Apple Music</a></li>
+                        <li><a href="">Apple TV+</a></li>
+                        <li><a href="">Apple Fitnnes+</a></li>
+                        <li><a href="">Apple Arcade</a></li>
+                        <li><a href="">iClod</a></li>
+                        <li><a href="">Apple One</a></li>
+                        <li><a href="">Apple Pay</a></li>
+                        <li><a href="">Livros</a></li>
+                        <li><a href="">Apple Podcasts</a></li>
+                        <li><a href="">Apple Store</a></li>
+                        
+                        <a href="#" class="title">
+                            <h4>Sua conta</h4>
+                        </a><hr>
 
-                    <a href="#" class="title">
-                        <h4>Apple Store</h4>
-                    </a><hr>
+                        <li><a href="">Gerenciar seu ID Apple</a></li>
+                        <li><a href="">Conta da Apple Store</a></li>
+                        <li><a href="">iCloud.com</a></li>
+                    </ul>
+                    <ul>
 
-                    <li><a href="">Encontre uma loja</a></li>
-                    <li><a href="">Genius Bar</a></li>
-                    <li><a href="">Today at Apple</a></li>
-                    <li><a href="">Apple Camp</a></li>
-                    <li><a href="">App Apple Store</a></li>
-                    <li><a href="">Financiamento</a></li>
-                    <li><a href="">Programa de Reciclagem da Apple</a></li>
-                    <li><a href="">Status do seu pedido</a></li>
-                    <li><a href="">para comprar</a></li>
-                </ul>
-                <ul>
-                    <a href="#" class="title">
-                        <h4>Para Empresas</h4>
-                    </a><hr>
+                        <a href="#" class="title">
+                            <h4>Apple Store</h4>
+                        </a><hr>
 
-                    <li><a href="">Apple e os negócios</a></li>
-                    <li><a href="">Comprar para a sua empresa</a></li>
+                        <li><a href="">Encontre uma loja</a></li>
+                        <li><a href="">Genius Bar</a></li>
+                        <li><a href="">Today at Apple</a></li>
+                        <li><a href="">Apple Camp</a></li>
+                        <li><a href="">App Apple Store</a></li>
+                        <li><a href="">Financiamento</a></li>
+                        <li><a href="">Programa de Reciclagem da Apple</a></li>
+                        <li><a href="">Status do seu pedido</a></li>
+                        <li><a href="">para comprar</a></li>
+                    </ul>
+                    <ul>
+                        <a href="#" class="title">
+                            <h4>Para Empresas</h4>
+                        </a><hr>
 
-                    <a href="#" class="title">
-                        <h4>Para a Educação</h4>
-                    </a><hr>
+                        <li><a href="">Apple e os negócios</a></li>
+                        <li><a href="">Comprar para a sua empresa</a></li>
 
-                    <li><a href="">Apple e a Educação</a></li>
-                    <li><a href="">Comprar para Educação Básica</a></li>
-                    <li><a href="">Comprar para a faculdade</a></li>
+                        <a href="#" class="title">
+                            <h4>Para a Educação</h4>
+                        </a><hr>
 
-                    <a href="#" class="title">
-                        <h4>Para a Saúde</h4>
-                    </a><hr>
+                        <li><a href="">Apple e a Educação</a></li>
+                        <li><a href="">Comprar para Educação Básica</a></li>
+                        <li><a href="">Comprar para a faculdade</a></li>
 
-                    <li><a href="">Apple e a Saúde</a></li>
-                    <li><a href="">Saúde no Apple Watch</a></li>
-                </ul>
-                <ul>
-                    <a href="#" class="title">
-                        <h4>Valores da Apple</h4>
-                    </a><hr>
+                        <a href="#" class="title">
+                            <h4>Para a Saúde</h4>
+                        </a><hr>
 
-                    <li><a href="">Acessibilidade</a></li>
-                    <li><a href="">Educação</a></li>
-                    <li><a href="">Meio ambiente</a></li>
-                    <li><a href="">Privacidade</a></li>
-                    <li><a href="">Responsabilidade dos fornecedores</a></li>
-                    
-                    <a class="title">
-                        <h4>Sobre a Apple</h4>
-                    </a><hr>
+                        <li><a href="">Apple e a Saúde</a></li>
+                        <li><a href="">Saúde no Apple Watch</a></li>
+                    </ul>
+                    <ul>
+                        <a href="#" class="title">
+                            <h4>Valores da Apple</h4>
+                        </a><hr>
 
-                    <li><a href="">Newsroom</a></li>
-                    <li><a href="">Liderança da Apple</a></li>
-                    <li><a href="">Oportunidades de Carreira</a></li>
-                    <li><a href="">Investidores</a></li>
-                    <li><a href="">Ética e Compliance</a></li>
-                    <li><a href="">Eventos</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </div>
+                        <li><a href="">Acessibilidade</a></li>
+                        <li><a href="">Educação</a></li>
+                        <li><a href="">Meio ambiente</a></li>
+                        <li><a href="">Privacidade</a></li>
+                        <li><a href="">Responsabilidade dos fornecedores</a></li>
+                        
+                        <a class="title">
+                            <h4>Sobre a Apple</h4>
+                        </a><hr>
+
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Liderança da Apple</a></li>
+                        <li><a href="">Oportunidades de Carreira</a></li>
+                        <li><a href="">Investidores</a></li>
+                        <li><a href="">Ética e Compliance</a></li>
+                        <li><a href="">Eventos</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </div>
 
                     <p>
                         Outras formas de comprar: <a href="#">encontre uma Apple Store</a> ou <a href="#">revendedor Apple</a> na sua região. Ou ligue para 0800-761-0867. Rua Leopoldo Couto de Magalhães Jr., 700, 7º andar, Itaim Bibi. São Paulo, SP. CEP: 04542-000.<br>
@@ -319,17 +281,18 @@
                     </p>
 
                     <a id="country" href="#">Brasil</a>
-                    
+                        
                     <p id="copyright">
                         Copyright © 2022 Apple Inc. Todos os direitos reservados. Apple Computer Brasil Ltda. CNPJ: 00.623.904/0003-35
                     </p>
-                    
+                        
                     <ul id="aside">
                         <li><a href="">Política de Privacidade</a></li><hr>
                         <li><a href="">Política de vendas</a></li><hr>
                         <li><a href="">Avisos legais</a></li><hr>
                         <li><a href="">Mapa do site</a></li><hr>
                     </ul>
+            </div>
         </footer>
     </main>
 </body>

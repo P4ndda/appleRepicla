@@ -53,63 +53,66 @@
     text-decoration: none;
 }
 
-main{background-color: var(--white);}
-
-header#headerNav{
-    top: 0%;
+header, header > ul{
+    background-color: var(--colorTitle);
     position: fixed;
-    background-color: var(--gray);
-    width: 97vw;
-    padding: 15px 10px;
-    z-index: 999;
-    opacity: 0.98;
+    display: block;
+    width: 100vw;
+    opacity: 0.99;
+    backdrop-filter: blur(200px);
 }
 
-header 
-ul#navListMobile {
-    height: 100%;
-    list-style: none;
+
+header ul {
     display: flex;
     justify-content: space-between;
-    color: var(--white);
+    height: 48px;
+    list-style: none;
+    padding: 0px 15px;
 }
 
-header 
-ul li button{
-    color: var(--white);
-    border: none;
-    background-color: var(--gray);
+header ul li, li > div{
+    opacity: 0.7;
 }
 
-header ul
-li#iconApple, button{
-    display: block;
-    color: var(--white);
-    width: 15px;
-    height: 15px;
-    opacity: .7;
-}
-
-header 
-ul li button:hover, li#iconApple:hover{
+header ul li:hover
+,  li > div:hover{
     opacity: 1;
     cursor: pointer;
 }
 
-header 
-ul li#iconApple{
-    content: '';
-    display: inline-block;
-    background-image: url(icons/apple-icon.png);
-    background-size: contain;
-    width: 25px;
-    height: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
+header ul li #lineTop{
+    background-color: white;
+    width: 15px;
+    height: 1px;
+    margin-top: 20px;
 }
 
-header
-ul#navListDesk{display: none;}
+header ul li #lineBottom{
+    background-color: white;
+    width: 15px;
+    height: 1px;
+    margin-top: 7px;
+}
+
+header ul li#iconApple{
+    background-image: url(icons/nav/apple.svg);
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 20px;
+}
+
+header ul li#bag{
+    background-image: url(icons/nav/bag.svg);
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 20px;
+}
+
+
+
+main{background-color: var(--white);}
+
 
 
 .textSection{
@@ -188,7 +191,6 @@ section{
 
 section#iPad{
     height: calc(var(--heightSetion) + 50px );
-    position: relative;
     background-color: var(--divBackground);
     background-image: url(img/mobile/iPad.png);
     background-repeat: no-repeat;
@@ -196,9 +198,7 @@ section#iPad{
 }
 
 section#iPad
-.textSection h2{
-    padding-top: 95px;
-}
+.textSection h2{padding-top: 95px;}
 
 section.backgroungBlack{
     background-repeat: no-repeat;
@@ -310,22 +310,7 @@ article#handsAndIphone{
 
 article#iPadsPro{
     color: var(--white);
-    position: relative;
-    backdrop-filter: blur(1px);
-    background-color: var(--black);
-    backdrop-filter: blur(20px);
-}
-
-article#iPadsPro
-div#gradientColor{
-    position: absolute;
-    top: 50%;
-    transform: translatey(-25%);
-
-    height: 250px;
-    width: 100%;
-
-    background-image: linear-gradient(to right, var(--blue), #c61f8b);
+    background-color: black;
 }
 
 article#appleTv{
@@ -373,14 +358,13 @@ article#watchs
 .textSection
 h4{ color: var(--red);}
 
-footer{
-    padding: 15px;
+div#content{
+    padding: 12px 12px;
     background-color: #F5F5F7;
     font-family: var(--footerFont-Regular);
-
     color: #656568;
-    max-width: 980px;
-    margin: auto;
+    max-width: 1000px;
+
 }
 
 footer p{ 
@@ -388,7 +372,7 @@ footer p{
     line-height: 1.4em;
 }
 
-footer > hr{ margin: 20px 0px;}
+div#content > hr{ margin: 20px 0px;}
 
 footer div#list{padding-bottom: 17px;}
 
