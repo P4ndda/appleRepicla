@@ -53,31 +53,52 @@
     text-decoration: none;
 }
 
-header, header > ul{
-    background-color: var(--colorTitle);
+header, header ul{
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+    height: 48px;
     position: fixed;
-    display: block;
-    width: 100vw;
+    background-color: var(--colorTitle);
     opacity: 0.99;
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur();
+    z-index: 1;
 }
 
+header ul#navDesk, li#search{
+    display: none;
+}
 
-header ul {
+header > ul{
+    display: block;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     height: 48px;
     list-style: none;
-    padding: 0px 15px;
+    padding: 0px 20px;
+}
+
+header ul li.liDesk{
+    display: none;
+}
+
+header ul li.navIcon{
+    background-repeat: no-repeat;
+    height: 48px;
+    width: 20px;
 }
 
 header ul li, li > div{
     opacity: 0.7;
+    font-size: 0.8em;
+    color: var(--white);
 }
 
 header ul li:hover
 ,  li > div:hover{
     opacity: 1;
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -98,15 +119,11 @@ header ul li #lineBottom{
 header ul li#iconApple{
     background-image: url(icons/nav/apple.svg);
     background-repeat: no-repeat;
-    height: 48px;
-    width: 20px;
 }
 
 header ul li#bag{
     background-image: url(icons/nav/bag.svg);
     background-repeat: no-repeat;
-    height: 48px;
-    width: 20px;
 }
 
 

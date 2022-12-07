@@ -1,11 +1,31 @@
+header{height: 42px;}
+
+header ul{height: 42px; max-width: 1000px;}
+
+header ul li.liDesk{display: block;}
+
+header ul li.deletMobi{display: none;}
+
+header ul li{padding-top: 13px;}
+
+header ul li#search{
+    background-image: url(icons/nav/search.svg);
+    display: block;
+}
+
 section{
     height: calc(var(--heightSetion) + 150px);
 }
 
 section#iPad{
+    position: relative;
     height: calc(var(--heightSetion) + 200px);
     background-image: url(img/iPad.png);
     background-position: bottom 45px right 65%;
+}
+
+section#iPad > .textSection, section#iPad > .textSection h2{
+    padding: 0;
 }
 
 section#iPad > .textSection{
@@ -14,7 +34,9 @@ section#iPad > .textSection{
     left: 50%;
     transform: translate(-0%, -50%);
     padding-top: 0%;
+    z-index: 0;
 }
+
 
 .textSection{padding-top: 35px;}
 

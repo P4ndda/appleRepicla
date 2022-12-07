@@ -16,16 +16,25 @@
 <body>
     <header>
         <ul id="navMobile">
-            <li>
-                <div id="">
+            <li class="deletMobi">
+                <div id="menu" onclick="clickMenu()">
                     <div id="lineTop"></div>
                     <div id="lineBottom"></div>
                 </div>
             </li>
-            <li id="iconApple">
-
-            </li>
-            <li id="bag">
+            <li id="iconApple" class="navIcon"></li>
+            <li class="liDesk">Loja</li>
+            <li class="liDesk">Mac</li>
+            <li class="liDesk">iPad</li>
+            <li class="liDesk">iPhone</li>
+            <li class="liDesk">Watch</li>
+            <li class="liDesk">AirPods</li>
+            <li class="liDesk">TV e casa</li>
+            <li class="liDesk">Só na Apple</li>
+            <li class="liDesk">Acessórios</li>
+            <li class="liDesk">Suporte</li>
+            <li id="search"  class="navIcon" class="liDesk"></li>
+            <li id="bag" class="navIcon">
 
             </li>
         </ul>
@@ -295,5 +304,11 @@
             </div>
         </footer>
     </main>
+    <script>
+        function clickMenu(){
+            bag.style.visibility = 'hidden';
+            header.style.height = '100vh'
+        }
+    </script>
 </body>
 </html>
