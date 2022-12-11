@@ -64,10 +64,8 @@ header, header ul{
     backdrop-filter: blur();
     z-index: 1;
 }
-
-header ul#navDesk, li#search{
-    display: none;
-}
+ 
+header ul#navDesk, li#search{display: none;}
 
 header > ul{
     display: block;
@@ -79,9 +77,7 @@ header > ul{
     padding: 0px 20px;
 }
 
-header ul li.liDesk{
-    display: none;
-}
+header ul li.liDesk{display: none;}
 
 header ul li.navIcon{
     background-repeat: no-repeat;
@@ -162,32 +158,19 @@ h2, h4 { font-family: var(--titleFont); }
 .textSection a{
     color: var(--blue);
     font-size: 1.2em;
-
 }
 
-.textSection a.one{
-    margin-right: 32px;
-}
+.textSection a.one{margin-right: 32px;}
 
-.textSection a::after{
-    content: " >";
-}
+.textSection a::after{content: " >";}
 
-.textSection a::after{
-    text-decoration: none;
-}
+.textSection a::after{text-decoration: none;}
 
-a::after:hover{
-    text-decoration: none;
-}
+a::after:hover{text-decoration: none;}
 
-.textSection a:hover{
-    text-decoration: underline;
-} 
+.textSection a:hover{text-decoration: underline;} 
 
-.textSection h2.iconTitle{
-    text-transform: uppercase;
-}
+.textSection h2.iconTitle{text-transform: uppercase;}
 
 .textSection h2.iconTitle::before{
     content: '';
@@ -226,9 +209,7 @@ section.backgroungBlack{
 }
 
 section.backgroungBlack
-.textSection{
-    color: white;
-}
+.textSection{color: white;}
 
 section#Bigwatch{
     background-image: url(img/mobile/bigAppleWatch.png);
@@ -258,9 +239,7 @@ section#Bigwatch
     padding-bottom: 10px;
 }
 
-section.twoArticles{
-    height: calc( var(--heightSectionTwo) * 2);
-}
+section.twoArticles{height: calc( var(--heightSectionTwo) * 2);}
 
 article{
     height: var(--heightSectionTwo);
@@ -301,9 +280,7 @@ article#worldWatch{
 }
 
 article#worldWatch
-.textSection{
-    color: var(--white);
-}
+.textSection{color: var(--white);}
 
 article#worldWatch
 .textSection 
@@ -381,7 +358,6 @@ div#content{
     font-family: var(--footerFont-Regular);
     color: #656568;
     max-width: 1000px;
-
 }
 
 footer p{ 
@@ -444,7 +420,4 @@ footer ul#aside{
     list-style: none;
 }
 
-footer ul#aside > hr{
-    margin: 0px 10px;
-}
-
+footer ul#aside > hr{margin: 0px 10px;}
