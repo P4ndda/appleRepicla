@@ -64,6 +64,8 @@ header, header ul{
     backdrop-filter: blur();
     z-index: 1;
 }
+
+header #ulMenu{display: none;}
  
 header ul#navDesk, li#search{display: none;}
 
