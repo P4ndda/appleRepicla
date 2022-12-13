@@ -127,44 +127,72 @@ header ul li#search{
     background-repeat: no-repeat;
 }
 
-header div#menuMobil{display: none;}
+header div#menuMobil{
+    display: none;
+    width: 95vw;
+}
 
-header div#input{
-    background-color: var(--gray);
-    border-radius: 8px;
+div#menuMobil div#input{
+    display: flex;
     margin-top: 50px;
-    color: gray;
-    padding: 0px 5px;
-    margin-bottom: 15px;
+    height: 35px;
+    margin-bottom: 20px;
+    width: 98%;
 }
 
-header div#input label span#iSearch{
-    background-color: #277DD4;
-}
-
-header div#input input{
-    margin-left: 8px;
-    width: 85vw;
-    max-width: 620px;
-    background-color: var(--gray);
-    border-radius: 8px;
-    height: 36px;
-    border: none;
-    font-size: 1.1em;
-    color: white;
-}
-
-header div#input input:active{
-    border: none;
-}
-
-header #ulMenu{
-    list-style: none;
+div#menuMobil div#input input,
+div#menuMobil #ulMenu{
     display: block;
-    padding: 10px;
-    height: 500px;
-    font-size: 1.3em;
     margin: auto;
+    max-width: 584px;
+}
+
+div#menuMobil div#input label,
+div#menuMobil div#input input{
+    display: inline-block;
+    height: 100%;
+    color: white;
+    background-color: #1D1D1F;
+
+}
+
+div#menuMobil div#input input,
+div#menuMobil div#input button{
+    font-size: 1.05em;
+}
+
+div#menuMobil div#input label{
+    background-image: url(icons/nav/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.8em;
+    width: 30px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+div#menuMobil div#input input{
+    border-radius: 0px 10px 10px 0px;
+    margin: 0;
+    border: none;
+    width: 94%;
+}
+
+div#menuMobil div#input button{
+    display: none;
+    height: 100%;
+    margin-left: 10px;
+    color: var(--blue);
+    background-color: transparent;
+}
+
+
+
+div#menuMobil #ulMenu{
+    list-style: none;
+    padding: 10px;
+    width: 90%;
+    height: 500px;
+    font-size: 1.4em;
 }
 
 header #ulMenu li{
@@ -172,9 +200,7 @@ header #ulMenu li{
 }
 
 header div hr{
-    opacity: 0.5;
-    color: gray;
-    background-color: transparent;
+    border: 1px solid #1D1D1F;
 }
 
 main{background-color: var(--white);}

@@ -18,3 +18,10 @@ function clickMenu(){
         cont = 0;
     }
 }
+
+function clickInputSear(){
+    document.getElementById('iSearch').style.width = '72.5%'
+    document.getElementById('stop').style.display = 'inline-block'
+    document.getElementById(`nav`).style.display = 'none';
+}
+

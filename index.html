@@ -17,8 +17,8 @@
     <header id="test">
         
         <ul id="nav">
-            <li class="deletMobi">
-                <div id="menu" onclick="clickMenu()">
+            <li class="deletMobi" onclick="clickMenu()">
+                <div id="menu" >
                     <div id="lineTop"></div>
                     <div id="lineBottom"></div>
                 </div>
@@ -40,9 +40,10 @@
 
         <div id="menuMobil">
             <div id="input">
-                <label for="iSearch"><span id="iSearch" class="navIcon"></span></label>
+                <label for="iSearch"></label>
                 <input type="text" name="" id="iSearch"
-                placeholder="Buscar em apple.com">
+                placeholder="Buscar em apple.com" onclick="clickInputSear()">
+                <button id="stop">Cancelar</button>
             </div>
             <hr>
             

@@ -1,6 +1,4 @@
-header{height: 42px;}
-
-header ul{height: 42px; max-width: 1000px;}
+header ul#nav{height: 42px; max-width: 1000px;}
 
 header ul li.liDesk{display: block;}
 
