@@ -154,12 +154,19 @@ div#menuMobil div#input input{
     height: 100%;
     color: white;
     background-color: #1D1D1F;
+}
 
+div#menuMobil div#input input:active{
+    border-style: none;
 }
 
 div#menuMobil div#input input,
 div#menuMobil div#input button#cancel{
     font-size: 1.05em;
+}
+
+div#menuMobil div#input button#cancel:hover{
+    cursor: pointer;
 }
 
 div#menuMobil div#input label{
@@ -485,7 +492,7 @@ footer a{
 
 footer > a:hover, 
 p > a:hover, 
-ul#aside li > a:hover{
+ul#aside li > a:hover, a#country:hover{
     text-decoration: underline;
 }
 
