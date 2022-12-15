@@ -134,6 +134,7 @@ header div#menuMobil{
 
 div#menuMobil div#input{
     display: flex;
+    justify-content: center;
     margin-top: 50px;
     height: 35px;
     margin-bottom: 20px;
@@ -157,7 +158,7 @@ div#menuMobil div#input input{
 }
 
 div#menuMobil div#input input,
-div#menuMobil div#input button{
+div#menuMobil div#input button#cancel{
     font-size: 1.05em;
 }
 
