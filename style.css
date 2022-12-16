@@ -447,6 +447,72 @@ div#content{
     max-width: 1000px;
 }
 
+section.carousel{
+    height: 533px;
+    background-color: #adbeeb45;
+}
+
+section.carousel 
+div.container{
+    position: relative;
+    height: 505px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.container
+div.galleryWrapper{
+    overflow-x: auto;
+}
+
+section.carousel div.container
+button.arrow{
+    position: absolute;
+    color: white;
+    top: 0;
+    bottom: 0;
+    width: 90px;
+    opacity: 0.2;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+div.container
+button.arrowLeft{
+    right: auto;
+    left: 0;
+}
+
+div.container
+button.arrowRight{
+    right: 0;
+    left: auto;
+}
+
+
+div.container
+div.gallery{
+    display: flex;
+    flex-flow: nowrap;
+    gap: 15px;
+}
+
+div.gallery
+span.item{
+    background-color: #000000;
+    width: 274px;
+    height: 495px;
+    flex-shrink: 0;
+    opacity: 0.6;
+}
+
+div.gallery
+span.currentItem{
+    opacity: 1;
+}
+
+
 footer p{ 
     font-size: 0.75em;
     line-height: 1.4em;
